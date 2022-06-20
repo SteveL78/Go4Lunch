@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Go4Lunch</string>
+
+    <!-- activity_sign_in.xml -->
+    <string name="go4lunch_logo">Go4Lunch logo</string>
+    <string name="app_subtitle">Find a nice restaurant and invite your co-workers for lunch !</string>
+    <string name="authentication_sign_in_btn">Sign in</string>
+    <string name="authentication_sign_out_btn">Sign out</string>
+
+    <!-- authentication_layout.xml -->
+    <string name="sign_in_with_fb">Sign in with Facebook</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_twitter">Sign in with Twitter</string>
+    <string name="sign_in_with_email">Sign in with Email</string>
+
+    <!-- Bottom menu -->
+    <string name="icon_map_view">Map View</string>
+    <string name="icon_list_view">List View</string>
+    <string name="icon_workmates">Workmates</string>
+
+    <!-- List view fragment -->
+    <string name="open_restaurant">Open</string>
+    <string name="closed_restaurant">Closed</string>
+
+    <!-- Workmates fragment -->
+    <string name="place_workmates_eating">\u0020is eating at\u0020 </string>
+    <string name="workmates_not_place">\u0020hasn\'t decided yet</string>
+
+    <!-- Toolbar -->
+    <string name="i_am_hungry">I\'m Hungry!</string>
+    <string name="available_workmates">Available workmates</string>
+
+    <!-- Used in NavigationDrawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="drawer_your_lunch_item">YOUR LUNCH</string>
+    <string name="drawer_settings_item">SETTINGS</string>
+    <string name="drawer_logout_item">LOGOUT</string>
+
+    <!-- Autocomplete search bar -->
+    <string name="search_bar_hint">Search restaurants</string>
+    <string name="search_bar_workmates_hint">Search workmates</string>
+
 </resources>
