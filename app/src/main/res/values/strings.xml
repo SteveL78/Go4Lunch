@@ -14,9 +14,9 @@
     <string name="sign_in_with_email">Sign in with Email</string>
 
     <!-- Bottom menu -->
-    <string name="icon_map_view">Map View</string>
-    <string name="icon_list_view">List View</string>
-    <string name="icon_workmates">Workmates</string>
+    <string name="bottom_navigation_menu_map_view">Map View</string>
+    <string name="bottom_navigation_menu_list_view">List View</string>
+    <string name="bottom_navigation_menu_workmates">Workmates</string>
 
     <!-- List view fragment -->
     <string name="open_restaurant">Open</string>
