@@ -13,7 +13,7 @@
     <string name="sign_in_with_twitter">Sign in with Twitter</string>
     <string name="sign_in_with_email">Sign in with Email</string>
 
-    <!-- Bottom menu -->
+    <!-- Bottom navigation view -->
     <string name="bottom_navigation_menu_map_view">Map View</string>
     <string name="bottom_navigation_menu_list_view">List View</string>
     <string name="bottom_navigation_menu_workmates">Workmates</string>
@@ -40,5 +40,11 @@
     <!-- Autocomplete search bar -->
     <string name="search_bar_hint">Search restaurants</string>
     <string name="search_bar_workmates_hint">Search workmates</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_map_fragment">Map view fragment</string>
+    <string name="hello_list_view_fragment">List View fragment</string>
+    <string name="hello_workmates_fragment">Workmates fragment</string>
+    <string name="hello_transaction_view_fragment">Transaction view fragment</string>
 
 </resources>
