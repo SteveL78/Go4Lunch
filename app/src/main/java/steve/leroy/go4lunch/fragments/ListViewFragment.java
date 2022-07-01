@@ -1,21 +1,23 @@
 package steve.leroy.go4lunch.fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import steve.leroy.go4lunch.R;
+import androidx.fragment.app.Fragment;
+
+import steve.leroy.go4lunch.databinding.FragmentListViewBinding;
 
 public class ListViewFragment extends Fragment {
+
+    private FragmentListViewBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list_view, container, false);
+        binding = FragmentListViewBinding.inflate( inflater, container, false );
+        return binding.getRoot();
     }
 }
