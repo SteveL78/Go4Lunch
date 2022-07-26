@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Margins -->
+    <dimen name="small_margin">8dp</dimen>
     <dimen name="default_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="xlarge_margin">48dp</dimen>
+
+    <!-- Images -->
+    <dimen name="size_user_image_height">60dp</dimen>
+    <dimen name="size_user_image_width">@dimen/size_user_image_height</dimen>
+    <dimen name="size_drawer_background_image_height">130dp</dimen>
+    <dimen name="size_drawer_background_image_width">@dimen/size_drawer_background_image_height</dimen>
+
+    <!-- Default NavigationView Header height -->
+    <dimen name="nav_header_height">250dp</dimen>
 
 </resources>

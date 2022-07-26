@@ -22,11 +22,24 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate( getLayoutInflater() );
         setContentView( binding.getRoot() );
 
-        setUpBottomNavigation();
+        this.configureDrawerLayout();
+
+        this.configureBottomNavigation();
 
     }
 
-    private void setUpBottomNavigation() {
+
+    // ---------------------
+    // CONFIGURATION
+    // ---------------------
+
+    private void configureDrawerLayout() {
+        binding.topAppBar.topAppBar.setNavigationOnClickListener( view ->
+                binding.drawerLayout.open() );
+    }
+
+
+    private void configureBottomNavigation() {
         NavController navController = Navigation.findNavController( this, R.id.nav_host_fragment );
         NavigationUI.setupWithNavController( binding.bottomNavigationMenu, navController );
     }

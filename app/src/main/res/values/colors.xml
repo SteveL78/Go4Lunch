@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="orange">#e55031</color>
-    <color name="darkOrange">#a32318</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="orange">#d96a44</color>
+    <color name="darkOrange">#a43a25</color>
 
-    <color name="lightOrange">#ed8f5d</color>
+    <color name="lightOrange">#e09366</color>
     <color name="black">#000000</color>
     <color name="darkGrey">#212121</color>
     <color name="grey">#E6757575</color>

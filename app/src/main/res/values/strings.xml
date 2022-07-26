@@ -29,6 +29,8 @@
     <!-- Toolbar -->
     <string name="i_am_hungry">I\'m Hungry!</string>
     <string name="available_workmates">Available workmates</string>
+    <string name="search">Search</string>
+    <string name="content_description_search">Search button</string>
 
     <!-- Used in NavigationDrawer -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -36,6 +38,8 @@
     <string name="drawer_your_lunch_item">YOUR LUNCH</string>
     <string name="drawer_settings_item">SETTINGS</string>
     <string name="drawer_logout_item">LOGOUT</string>
+    <string name="drawer_description_user_avatar">Photo of a workmate</string>
+    <string name="drawer_description_business_lunch_photo">Business lunch photo</string>
 
     <!-- Autocomplete search bar -->
     <string name="search_bar_hint">Search restaurants</string>
