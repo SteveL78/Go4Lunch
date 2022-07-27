@@ -6,6 +6,7 @@
     <string name="app_subtitle">Find a nice restaurant and invite your co-workers for lunch !</string>
     <string name="authentication_sign_in_btn">Sign in</string>
     <string name="authentication_sign_out_btn">Sign out</string>
+    <string name="activity_sign_in_description_business_lunch_photo">Business lunch photo</string>
 
     <!-- authentication_layout.xml -->
     <string name="sign_in_with_fb">Sign in with Facebook</string>

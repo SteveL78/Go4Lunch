@@ -12,6 +12,8 @@
     <dimen name="size_user_image_width">@dimen/size_user_image_height</dimen>
     <dimen name="size_drawer_background_image_height">130dp</dimen>
     <dimen name="size_drawer_background_image_width">@dimen/size_drawer_background_image_height</dimen>
+    <dimen name="size_sign_in_background_image_height">200dp</dimen>
+    <dimen name="size_sign_in_background_image_width">@dimen/size_drawer_background_image_height</dimen>
 
     <!-- Default NavigationView Header height -->
     <dimen name="nav_header_height">250dp</dimen>

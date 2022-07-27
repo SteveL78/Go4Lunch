@@ -13,15 +13,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Go4Lunch"
         tools:targetApi="31">
+
+
+        <!-- SIGN IN ACTIVITY -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".authentication.SignInActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- MAIN ACTIVITY -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            tools:ignore="LockedOrientationActivity"/>
+
+
     </application>
 
 </manifest>
