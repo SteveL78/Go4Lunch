@@ -3,24 +3,23 @@ package steve.leroy.go4lunch;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
 import steve.leroy.go4lunch.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
-    private ActivityMainBinding binding;
+    @Override
+    public ActivityMainBinding getViewBinding() {
+        return ActivityMainBinding.inflate( getLayoutInflater() );
+    }
 
     @SuppressLint("NonConstantResourceId")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-
-        binding = ActivityMainBinding.inflate( getLayoutInflater() );
-        setContentView( binding.getRoot() );
 
         this.configureDrawerLayout();
 

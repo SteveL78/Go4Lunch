@@ -16,7 +16,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/auth_background" />
 
-    <!-- MAIN CONTAINER -->
+    <!-- CONTAINER -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,8 +47,8 @@
                 <!-- APP LOGO -->
                 <ImageView
                     android:id="@+id/activity_sign_in_app_logo"
-                    android:layout_width="@dimen/size_sign_in_background_image_height"
-                    android:layout_height="@dimen/size_sign_in_background_image_width"
+                    android:layout_width="@dimen/size_sign_in_background_image_width"
+                    android:layout_height="@dimen/size_sign_in_background_image_height"
                     android:layout_weight="1"
                     android:background="@drawable/ic_logo_go4lunch"
                     android:contentDescription="@string/go4lunch_logo" />
@@ -58,6 +58,7 @@
                     android:id="@+id/activity_sign_in_app_name"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/default_margin"
                     android:layout_weight="1"
                     android:text="@string/app_name"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
@@ -66,7 +67,7 @@
 
                 <!-- DESCRIPTION GO4LUNCH  -->
                 <TextView
-                    android:id="@+id/activity_signin_app_description"
+                    android:id="@+id/activity_sign_in_app_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/app_subtitle"
@@ -91,7 +92,7 @@
 
             <LinearLayout
                 android:id="@+id/activity_sign_in_buttons_container"
-                android:layout_width="250dp"
+                android:layout_width="260dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/default_margin"
                 android:layout_marginBottom="@dimen/default_margin"
