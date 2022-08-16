@@ -20,12 +20,14 @@
         <entry key="app/src/main/res/drawable-anydpi/ic_menu.xml" value="0.197" />
         <entry key="app/src/main/res/drawable-anydpi/ic_settings.xml" value="0.316" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.374" />
+        <entry key="app/src/main/res/drawable/button_radius.xml" value="0.2325" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.197" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.374" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main_header_navigation_drawer.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.2677083333333333" />
+        <entry key="app/src/main/res/layout/authentication_layout.xml" value="0.4942708333333333" />
         <entry key="app/src/main/res/layout/fragment_list_view.xml" value="0.4953125" />
         <entry key="app/src/main/res/layout/fragment_view_map.xml" value="0.4953125" />
         <entry key="app/src/main/res/layout/fragment_workmates.xml" value="0.2677083333333333" />

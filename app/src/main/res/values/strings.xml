@@ -28,7 +28,7 @@
     <string name="workmates_not_place">\u0020hasn\'t decided yet</string>
 
     <!-- Toolbar -->
-    <string name="i_am_hungry">I\'m Hungry!</string>
+    <string name="i_am_hungry">I\'m Hungry\!</string>
     <string name="available_workmates">Available workmates</string>
     <string name="search">Search</string>
     <string name="content_description_search">Search button</string>
