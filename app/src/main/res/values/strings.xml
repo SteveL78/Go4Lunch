@@ -7,6 +7,11 @@
     <string name="authentication_sign_in_btn">Sign in</string>
     <string name="authentication_sign_out_btn">Sign out</string>
     <string name="activity_sign_in_description_business_lunch_photo">Business lunch photo</string>
+    <string name="error_not_connected">You must log in !</string>
+    <string name="error_authentication_canceled">Authentication canceled</string>
+    <string name="error_no_internet">No internet connection !</string>
+    <string name="error_unknown_error">An unknown error has occurred</string>
+    <string name="connection_succeed">Authentication successful !</string>
 
     <!-- authentication_layout.xml -->
     <string name="sign_in_with_fb">Sign in with Facebook</string>
@@ -46,7 +51,11 @@
     <string name="search_bar_hint">Search restaurants</string>
     <string name="search_bar_workmates_hint">Search workmates</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <!-- FACEBOOK APPLICATION ID -->
+    <string name="facebook_application_id" translatable="false">738693207427488</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb738693207427488</string>
+
+    <!-- FRAGMENTS -->
     <string name="hello_map_fragment">Map view fragment</string>
     <string name="hello_list_view_fragment">List View fragment</string>
     <string name="hello_workmates_fragment">Workmates fragment</string>

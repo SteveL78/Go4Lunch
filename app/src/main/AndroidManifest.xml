@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="steve.leroy.go4lunch">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,10 +13,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.App.Starting"
+        android:theme="@style/AppThemeSplashScreen"
         tools:targetApi="31">
 
-        <!-- SPLASH SCREEN ACTIVITY -->
+        <!-- DATA FOR FACEBOOK -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
 
         <!-- SIGN IN ACTIVITY -->
         <activity

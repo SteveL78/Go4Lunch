@@ -2,6 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in_coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".authentication.SignInActivity">
@@ -27,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/xlarge_margin"
+            android:layout_marginTop="@dimen/default_margin"
             android:layout_weight="1">
 
             <LinearLayout
@@ -44,7 +45,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <!-- APP LOGO -->
+
+                <!-- LOGO AND TITLE GO4LUNCH -->
                 <ImageView
                     android:id="@+id/activity_sign_in_app_logo"
                     android:layout_width="@dimen/size_sign_in_background_image_width"
@@ -53,7 +55,6 @@
                     android:background="@drawable/ic_logo_go4lunch"
                     android:contentDescription="@string/go4lunch_logo" />
 
-                <!-- TITLE GO4LUNCH -->
                 <TextView
                     android:id="@+id/activity_sign_in_app_name"
                     android:layout_width="wrap_content"
@@ -104,16 +105,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:id="@+id/sign_in_button"
-                    style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_radius"
                     android:paddingStart="10dp"
                     android:text="@string/authentication_sign_in_btn"
                     android:textAllCaps="false"
-                    android:theme="@style/DefaultButtonTheme"
+                    android:theme="@style/MySignInTheme"
                     tools:ignore="RtlSymmetry,TextContrastCheck" />
 
             </LinearLayout>

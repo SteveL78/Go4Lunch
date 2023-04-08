@@ -1,64 +1,78 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- SplashScreen theme. -->
-    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+    <style name="AppThemeSplashScreen" parent="Theme.SplashScreen">
         <!-- Set the splash screen background, animated icon, and animation duration. -->
         <item name="windowSplashScreenBackground">@color/orange</item>
-
         <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
              animated drawable. One of these is required. -->
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_screen</item>
         <!-- Required for animated icons -->
         <item name="windowSplashScreenAnimationDuration">800</item>
-
         <!-- Set the theme of the Activity that directly follows your splash screen. -->
         <!-- Required -->
-        <item name="postSplashScreenTheme">@style/Theme.App</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
     </style>
 
 
     <!-- Base application theme. -->
-    <style name="Theme.App" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowFullscreen">true</item>
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryVariant">@color/darkOrange</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
+        <!-- Secondary brand color.-->
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        <!-- Status bar color.-->
         <item name="android:statusBarColor" tools:ignore="ObsoleteSdkInt" tools:targetApi="l">
             ?attr/colorPrimaryVariant
         </item>
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- STYLE SIGN-IN ACTIVITY -->
+    <style name="LoginTheme" parent="AppTheme" >
+        <item name="colorAccent">#D81B60</item>
+        <item name="colorButtonNormal">#D81B60</item>
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorControlActivated">@android:color/darker_gray</item>
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+
 
     <!-- Material Button themes -->
-    <style name="DefaultButtonTheme" parent="@style/Widget.MaterialComponents.Button.Icon">
+    <style name="MySignInTheme" parent="Widget.MaterialComponents.Button.Icon">
         <item name="android:textColor">@color/white</item>
         <item name="android:backgroundTint">@color/orange</item>
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <style name="MaterialButtonThemeFacebook" parent="DefaultButtonTheme">
+    <style name="MaterialButtonThemeFacebook" parent="MySignInTheme">
         <item name="android:backgroundTint">@color/color_fb_btn</item>
         <item name="android:drawableStart">@drawable/ic_facebook</item>
     </style>
 
-    <style name="MaterialButtonThemeGoogle" parent="DefaultButtonTheme">
+    <style name="MaterialButtonThemeGoogle" parent="MySignInTheme">
         <item name="android:backgroundTint">@color/color_google_btn</item>
         <item name="android:drawableStart">@drawable/ic_gmail</item>
     </style>
 
-    <style name="MaterialButtonThemeTwitter" parent="DefaultButtonTheme">
+    <style name="MaterialButtonThemeTwitter" parent="MySignInTheme">
         <item name="android:backgroundTint">@color/color_twitter_btn</item>
         <item name="android:drawableStart">@drawable/ic_twitter</item>
     </style>
 
-    <style name="MaterialButtonThemeEmail" parent="DefaultButtonTheme">
+    <style name="MaterialButtonThemeEmail" parent="MySignInTheme">
         <item name="android:drawableStart">@drawable/ic_email</item>
     </style>
 
