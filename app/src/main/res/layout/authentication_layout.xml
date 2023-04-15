@@ -103,7 +103,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/fb_auth_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                     android:theme="@style/MaterialButtonThemeFacebook"
                     tools:ignore="RtlSymmetry,TextContrastCheck" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/google_auth_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -121,9 +121,11 @@
                     android:background="@drawable/button_radius"
                     android:text="@string/sign_in_with_google"
                     android:theme="@style/MaterialButtonThemeGoogle"
+                    app:icon="@drawable/fui_ic_googleg_color_24dp"
+                    app:backgroundTint="@color/color_google_btn"
                     tools:ignore="RtlSymmetry,TextContrastCheck" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/twitter_auth_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -131,9 +133,10 @@
                     android:background="@drawable/button_radius"
                     android:text="@string/sign_in_with_twitter"
                     android:theme="@style/MaterialButtonThemeTwitter"
+                    app:icon="@drawable/fui_ic_twitter_bird_white_24dp"
                     tools:ignore="RtlSymmetry,TextContrastCheck" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/email_auth_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -141,6 +144,7 @@
                     android:background="@drawable/button_radius"
                     android:text="@string/sign_in_with_email"
                     android:theme="@style/MaterialButtonThemeEmail"
+                    app:icon="@drawable/fui_ic_mail_white_24dp"
                     tools:ignore="RtlSymmetry,TextContrastCheck" />
 
             </LinearLayout>

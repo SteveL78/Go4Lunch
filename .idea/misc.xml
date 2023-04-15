@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../gradle/caches/transforms-3/8176fbefecf80e8942f7c0542d866e29/transformed/firebase-ui-auth-8.0.0/res/drawable/fui_ic_mail_white_24dp.xml" value="0.157" />
         <entry key="..\:/Users/Certidev-HP-5/OneDrive - CERTIDEV/Documents/Workspace/Android/Go4Lunch/app/src/main/res/drawable/ic_baseline_map_24.xml" value="0.295" />
         <entry key="..\:/Users/Certidev-HP-5/OneDrive - CERTIDEV/Documents/Workspace/Android/Go4Lunch/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.295" />
         <entry key="..\:/Users/Certidev-HP-5/OneDrive - CERTIDEV/Documents/Workspace/Android/Go4Lunch/app/src/main/res/drawable/ic_baseline_view_list_24.xml" value="0.295" />
@@ -40,7 +40,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="zulu-15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

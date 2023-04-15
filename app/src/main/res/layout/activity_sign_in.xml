@@ -113,7 +113,7 @@
                     android:paddingStart="10dp"
                     android:text="@string/authentication_sign_in_btn"
                     android:textAllCaps="false"
-                    android:theme="@style/MySignInTheme"
+                    android:theme="@style/AuthTheme"
                     tools:ignore="RtlSymmetry,TextContrastCheck" />
 
             </LinearLayout>

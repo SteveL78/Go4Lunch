@@ -51,29 +51,23 @@
 
 
     <!-- Material Button themes -->
-    <style name="MySignInTheme" parent="Widget.MaterialComponents.Button.Icon">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:backgroundTint">@color/orange</item>
+    <style name="AuthTheme" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <style name="MaterialButtonThemeFacebook" parent="MySignInTheme">
+    <style name="MaterialButtonThemeFacebook" parent="AuthTheme">
         <item name="android:backgroundTint">@color/color_fb_btn</item>
-        <item name="android:drawableStart">@drawable/ic_facebook</item>
     </style>
 
-    <style name="MaterialButtonThemeGoogle" parent="MySignInTheme">
-        <item name="android:backgroundTint">@color/color_google_btn</item>
-        <item name="android:drawableStart">@drawable/ic_gmail</item>
+    <style name="MaterialButtonThemeGoogle" parent="AuthTheme">
+        <item name="colorPrimary">@color/color_google_btn</item>
     </style>
 
-    <style name="MaterialButtonThemeTwitter" parent="MySignInTheme">
-        <item name="android:backgroundTint">@color/color_twitter_btn</item>
-        <item name="android:drawableStart">@drawable/ic_twitter</item>
+    <style name="MaterialButtonThemeTwitter" parent="AuthTheme">
+        <item name="colorPrimary">@color/color_twitter_btn</item>
     </style>
 
-    <style name="MaterialButtonThemeEmail" parent="MySignInTheme">
-        <item name="android:drawableStart">@drawable/ic_email</item>
+    <style name="MaterialButtonThemeEmail" parent="AuthTheme">
     </style>
 
 
