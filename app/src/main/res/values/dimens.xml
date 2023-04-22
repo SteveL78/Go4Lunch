@@ -16,6 +16,6 @@
     <dimen name="size_sign_in_background_image_width">200dp</dimen>
 
     <!-- Default NavigationView Header height -->
-    <dimen name="nav_header_height">250dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
 
 </resources>

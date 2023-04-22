@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:padding="@dimen/large_margin">
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/header_navigation_background"
