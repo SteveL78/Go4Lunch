@@ -21,6 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import steve.leroy.go4lunch.BaseActivity;
+import steve.leroy.go4lunch.MainActivity;
 import steve.leroy.go4lunch.R;
 import steve.leroy.go4lunch.databinding.ActivitySignInBinding;
 
@@ -79,13 +80,7 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
                 .setIsSmartLockEnabled( false, true )
                 .build();
 
-        signInLauncher.launch(signInIntent);
-    }
-
-
-    // Show Snack Bar with a message
-    private void showSnackBar(String message) {
-        Snackbar.make( binding.activitySignInCoordinatorLayout, message, Snackbar.LENGTH_SHORT ).show();
+        signInLauncher.launch( signInIntent );
     }
 
 
@@ -94,6 +89,7 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
         if (result.getResultCode() == RESULT_OK) {
             // Successfully signed in
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            startMainActivity();
             showSnackBar( getString( R.string.connection_succeed ) );
             // ...
         } else { // ERRORS
@@ -111,4 +107,14 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
         }
     }
 
+
+    private void startMainActivity() {
+        startActivity( new Intent( this, MainActivity.class ) );
+    }
+
+
+    // Show Snack Bar with a message
+    private void showSnackBar(String message) {
+        Snackbar.make( binding.activitySignInCoordinatorLayout, message, Snackbar.LENGTH_SHORT ).show();
+    }
 }
