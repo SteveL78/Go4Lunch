@@ -50,7 +50,7 @@
     </style>
 
 
-    <!-- Material Button themes -->
+    <!-- AUTHENTICATION : Material Button themes -->
     <style name="AuthTheme" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textAllCaps">false</item>
     </style>
