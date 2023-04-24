@@ -44,7 +44,7 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
         SplashScreen splashScreen = SplashScreen.installSplashScreen( this );
         super.onCreate( savedInstanceState );
 
-        FacebookSdk.setClientToken( String.valueOf( R.string.facebook_application_id ) );
+        FacebookSdk.setClientToken( String.valueOf( com.firebase.ui.auth.R.string.facebook_application_id ) );
 
         setupListeners();
     }
@@ -58,7 +58,7 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
     private void displaySignInButtons() {
         // Choose authentication providers
         List<AuthUI.IdpConfig> providers = Arrays.asList(
-                //new AuthUI.IdpConfig.FacebookBuilder().build(),
+                new AuthUI.IdpConfig.FacebookBuilder().build(),
                 new AuthUI.IdpConfig.GoogleBuilder().build(),
                 new AuthUI.IdpConfig.TwitterBuilder().build(),
                 new AuthUI.IdpConfig.EmailBuilder().build() );

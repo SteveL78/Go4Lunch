@@ -52,8 +52,9 @@
     <string name="search_bar_workmates_hint">Search workmates</string>
 
     <!-- FACEBOOK APPLICATION ID -->
-    <string name="facebook_application_id" translatable="false">738693207427488</string>
-    <string name="facebook_login_protocol_scheme" translatable="false">fb738693207427488</string>
+    <string name="facebook_application_id" translatable="false">1316977875828805</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1316977875828805</string>
+    <string name="facebook_client_token">af259ccf4572e34d85a57b1fc2d414ec</string>
 
     <!-- FRAGMENTS -->
     <string name="hello_map_fragment">Map view fragment</string>
