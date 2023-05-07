@@ -58,7 +58,7 @@
         android:layout_marginStart="@dimen/small_margin"
         android:hint="John SMITH"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        android:textColorHint="@color/lightGrey"
+        android:textColor="@color/lightGrey"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/header_navigation_view_separate_line_to_center"
         app:layout_constraintStart_toEndOf="@id/header_navigation_user_photo"
@@ -71,7 +71,7 @@
         android:layout_marginStart="@dimen/small_margin"
         android:hint="jsmith.1337@gmail.com"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColorHint="@color/lightGrey"
+        android:textColor="@color/lightGrey"
         app:layout_constraintStart_toEndOf="@id/header_navigation_user_photo"
         app:layout_constraintTop_toBottomOf="@+id/header_navigation_view_separate_line_to_center"
         tools:ignore="HardcodedText" />
