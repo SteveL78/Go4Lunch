@@ -27,6 +27,9 @@ import steve.leroy.go4lunch.databinding.ActivitySignInBinding;
 
 public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
 
+    FirebaseAuth auth = FirebaseAuth.getInstance();
+    FirebaseUser currentUser = auth.getCurrentUser();
+
     private final ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
             new FirebaseAuthUIActivityResultContract(),
             this::onSignInResult
@@ -43,10 +46,22 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
     public void onCreate(Bundle savedInstanceState) {
         SplashScreen splashScreen = SplashScreen.installSplashScreen( this );
         super.onCreate( savedInstanceState );
-
-        FacebookSdk.setClientToken( String.valueOf( com.firebase.ui.auth.R.string.facebook_application_id ) );
+        
+        checkUserAlreadyLogged();
 
         setupListeners();
+
+        FacebookSdk.setClientToken( String.valueOf( com.firebase.ui.auth.R.string.facebook_application_id ) );
+        
+    }
+
+    
+    private void checkUserAlreadyLogged() {
+        if (currentUser != null) {
+            startMainActivity();
+        } else {
+            displaySignInButtons();
+        }
     }
 
 
@@ -89,8 +104,11 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
         if (result.getResultCode() == RESULT_OK) {
             // Successfully signed in
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-            startMainActivity();
+
             showSnackBar( getString( R.string.connection_succeed ) );
+
+            startMainActivity();
+
             // ...
         } else { // ERRORS
 
