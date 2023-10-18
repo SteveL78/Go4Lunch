@@ -3,6 +3,7 @@ package steve.leroy.go4lunch.authentication;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.core.splashscreen.SplashScreen;
 
@@ -32,7 +33,12 @@ public class SignInActivity extends BaseActivity<ActivitySignInBinding> {
 
     private final ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
             new FirebaseAuthUIActivityResultContract(),
-            this::onSignInResult
+            new ActivityResultCallback<FirebaseAuthUIAuthenticationResult>() {
+                @Override
+                public void onActivityResult(FirebaseAuthUIAuthenticationResult result) {
+                    onSignInResult(result);
+                }
+            }
     );
 
 
