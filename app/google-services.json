@@ -22,7 +22,15 @@
           }
         },
         {
-          "client_id": "399599012825-e5d5032417nlk2vtcqqm73uk0n801a39.apps.googleusercontent.com",
+          "client_id": "399599012825-t8mj0mvrm7in8pt2go8aoqrcn2e92fv1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.steve.leroy.go4lunch",
+            "certificate_hash": "4c668eb1ac6c4805cf9c4a647351605877d12466"
+          }
+        },
+        {
+          "client_id": "399599012825-rv5rv5kp933hod4n6rcr24i72eguo2r7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -59,7 +67,7 @@
           }
         },
         {
-          "client_id": "399599012825-e5d5032417nlk2vtcqqm73uk0n801a39.apps.googleusercontent.com",
+          "client_id": "399599012825-rv5rv5kp933hod4n6rcr24i72eguo2r7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
